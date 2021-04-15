@@ -1,0 +1,21 @@
+{
+  "extensions": [
+    "scalameta.metals",
+    "scala-lang.scala",
+    "vscode-icons-team.vscode-icons",
+    "vscodevim.vim",
+    "yzhang.markdown-all-in-one"
+  ],
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "settings": {
+  "terminal.integrated.shell.linux": "/bin/bash",
+  },
+  "mounts": [
+  "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
+],
+  "remoteEnv": {
+  "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+},
+  "remoteUser": "vscode",
+}
